@@ -1181,3 +1181,97 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+/* Stack language switch above contact */
+.header-cta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.header-cta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* ← clé du centrage */
+  gap: 6px;
+}
+
+/* petit switch discret */
+.lang-switch {
+  display: inline-flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  color: var(--accent-2);
+}
+
+.lang-btn.is-active {
+  color: var(--within-action);
+  pointer-events: none;
+}
+
+/* Desktop: show header stack, hide mobile-lang */
+.mobile-lang {
+  display: none;
+}
+
+@media (max-width: 760px) {
+
+  /* Mobile: header-cta is hidden already, so show the switch inside the menu */
+  .mobile-lang {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 6px 0 10px;
+  }
+
+  .mobile-lang .lang-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .header-cta-stack {
+    display: none;
+  }
+}
+
+/* Keep 2 columns on Within hero even on mobile */
+@media (max-width: 940px){
+  .hero.hero-keep-2col{
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .hero.hero-keep-2col h1{
+    font-size: 28px; /* évite que ça déborde */
+  }
+
+  .hero.hero-keep-2col p{
+    font-size: 14px;
+  }
+
+  .hero.hero-keep-2col .hero-aside{
+    min-height: auto;
+  }
+
+  .hero.hero-keep-2col .app-logo-lg{
+    width: 64px;
+    height: 64px;
+  }
+}

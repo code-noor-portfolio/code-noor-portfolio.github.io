@@ -1,50 +1,242 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Code Noor</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <title>Contact — Code Noor</title>
+  <link rel="canonical" href="https://code-noor-portfolio.github.io/contact.html" />
+<meta name="description"
+      content="Get in touch with Code Noor. Report a bug, ask a question, or say hello.">
 </head>
+
 <body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="Code Noor home">
+            <img src="../assets/app_logo_watermark.png" alt="Code Noor" />
+          </a>
 
-<header>
-  <div class="container nav">
-    <div class="logo">
-      <img src="../assets/logo.png" alt="Code Noor logo">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="within.html">Applications</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
+          <nav class="nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="about.html">A propos</a>
+          </nav>
+
+           <div class="header-cta header-cta-stack">
+  <div class="lang-switch" aria-label="Language switch">
+    <button class="lang-btn" type="button" data-lang="fr">FR</button>
+    <button class="lang-btn" type="button" data-lang="en">EN</button>
   </div>
-</header>
+  <a class="btn btn-active" href="contact.html">Contact</a>
+</div>         
+          <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+       <div class="mobile-menu" data-mobile-menu>
 
-<div class="container">
+  <div class="lang-switch mobile-lang" aria-label="Language switch">
+    <button class="lang-btn" type="button" data-lang="fr">FR</button>
+    <button class="lang-btn" type="button" data-lang="en">EN</button>
+  </div>
 
-<section class="about-block">
-<h1>Contact</h1>
-<form action="mailto:code.noor@outlook.com" method="post" enctype="text/plain">
-<input placeholder="Sujet">
-<textarea rows="5" placeholder="Message"></textarea>
-<button class="btn">Envoyer</button>
-</form>
-</section>
-
+  <a href="index.html">Home</a>
+  <a href="applications.html">Applications</a>
+  <a href="about.html" class="active">A Propos</a>
+  <a class="btn mobile-cta" href="contact.html">Contact</a>
 </div>
+      </div>
+    </header>
+ <main>
+      <section class="section">
+        <div class="container">
+          <div class="legal-head">
+            <div>
+              <div class="h2">Contactez-nous</div>
+              <div class="legal-sub">Envoyer un message à Code Noor (ouvre votre application e-mail)</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer>
-  <div class="container">
-    <p>
-    Publisher — Code Noor (sole proprietorship)<br>
-    Email: code.noor@outlook.com<br>
-    Director of publication: Code Noor
-    </p>
+      <section class="section">
+        <div class="container" style="max-width:860px;">
+          <article class="feature-card">
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Reason -->
+              <div class="field">
+                <label class="label">Raison</label>
+                <div class="reason-row" role="radiogroup" aria-label="Contact reason">
+                  <button type="button" class="reason-btn is-active" data-reason="Bug" aria-pressed="true">Bug</button>
+                  <button type="button" class="reason-btn" data-reason="Question" aria-pressed="false">Question</button>
+                  <button type="button" class="reason-btn" data-reason="Professional" aria-pressed="false">Contact pro</button>
+                  <button type="button" class="reason-btn" data-reason="Suggestion" aria-pressed="false">Suggestion</button>
+                </div>
+                <input type="hidden" name="reason" id="reason" value="Bug" />
+              </div>
+
+              <!-- Subject -->
+              <div class="field">
+                <label class="label" for="subject">Sujet</label>
+                <input class="input" id="subject" name="subject" type="text" placeholder="Objet du mail" required />
+                <p class="hint">Exemples : « Problème lors de l’enregistrement », « Question sur les tarifs », « Partenariat »</p>
+              </div>
+
+              <!-- Bug extra fields -->
+              <div id="bugFields" class="bug-fields">
+                <div class="grid-2">
+                  <div class="field">
+                    <label class="label" for="system">System</label>
+                    <select class="input" id="system" name="system">
+                      <option value="iOS">iOS</option>
+                      <option value="Android">Android</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label class="label" for="device">Appareil</label>
+                    <input class="input" id="device" name="device" type="text" placeholder="e.g. iPhone 14, Pixel 8" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="field">
+                <label class="label" for="message">Message</label>
+                <textarea class="input textarea" id="message" name="message" rows="7"
+                  placeholder="Ecrivez votre message ici…" required></textarea>
+              </div>
+
+              <!-- CTA -->
+              <div class="contact-actions">
+                <button class="btn btn-small" type="submit">Ouvrir le brouillon d’e-mail</button>
+                <span class="hint" style="margin:0;">
+                  Votre application de messagerie s’ouvrira avec le message déjà préparé
+                </span>
+              </div>
+
+              <!-- Success note -->
+              <div id="sentNote" class="sent-note" hidden>
+                <strong>C’est prêt !</strong> Votre brouillon est prêt. Il ne vous reste plus qu’à appuyer sur Envoyer dans votre messagerie, et nous vous répondrons dès que possible.
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+
+        <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="../assets/logo_studio.png" alt="Code Noor" />
+            <div>
+              <small><strong>Publisher</strong><br/>Code Noor<br/>Sole proprietorship (micro-enterprise)<br/>code.noor@outlook.com</small>
+              <br/>
+              <small style="display:inline-block;margin-top:10px;"><strong>Director of publication</strong><br/>Code Noor</small>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Nos Applications</a>
+            <a href="about.html">A propos</a>
+            <a href="contact.html">Contactez nous</a>
+          </div>
+          <div><small>Les mentions légales s’appliquent à l’ensemble du studio.
+Chaque application dispose de ses propres Conditions d’utilisation et de sa Politique de confidentialité.</small></div>
+        </div>
+        <div class="footer-bottom">© <span id="year"></span>, Code Noor copyright</div>
+      </div>
+    </footer>
   </div>
-</footer>
 
+  <script src="../script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Contact logic ---
+    const form = document.getElementById('contactForm');
+    const reasonInput = document.getElementById('reason');
+    const reasonButtons = Array.from(document.querySelectorAll('.reason-btn'));
+    const bugFields = document.getElementById('bugFields');
+    const sentNote = document.getElementById('sentNote');
+
+    function setReason(value) {
+      reasonInput.value = value;
+
+      reasonButtons.forEach(btn => {
+        const active = btn.dataset.reason === value;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      // Show extra fields only for Bug
+      bugFields.hidden = value !== 'Bug';
+    }
+
+    // init
+    setReason(reasonInput.value);
+
+    reasonButtons.forEach(btn => {
+      btn.addEventListener('click', () => setReason(btn.dataset.reason));
+    });
+
+    function buildMailto({ reason, subject, system, device, message }) {
+      const to = 'code.noor@outlook.com';
+
+      const cleanSubject = subject.trim();
+      const mailSubject = `[${reason}] ${cleanSubject}`;
+
+      const lines = [
+        `Reason: ${reason}`,
+        reason === 'Bug' ? `System: ${system || '-'}` : null,
+        reason === 'Bug' ? `Device: ${device || '-'}` : null,
+        `Page: ${location.href}`,
+        '',
+        'Message:',
+        message.trim(),
+      ].filter(Boolean);
+
+      const body = lines.join('\n');
+
+      return `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      sentNote.hidden = true;
+
+      const reason = reasonInput.value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      // Basic validation (no aggressive UX)
+      if (!subject.trim() || !message.trim()) {
+        // Quick native-like feedback
+        if (!subject.trim()) document.getElementById('subject').focus();
+        else document.getElementById('message').focus();
+        return;
+      }
+
+      const system = document.getElementById('system')?.value || '';
+      const device = document.getElementById('device')?.value || '';
+
+      const mailto = buildMailto({ reason, subject, system, device, message });
+
+      // Open user's email client with pre-filled content
+      window.location.href = mailto;
+
+      // We can't detect "sent", but we can confirm the draft is ready.
+      setTimeout(() => {
+        sentNote.hidden = false;
+        sentNote.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 400);
+    });
+  </script>
 </body>
 </html>

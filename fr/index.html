@@ -1,77 +1,242 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Code Noor</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Noor</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <title>Code Noor — Quiet, thoughtful apps for everyday clarity</title>
+
+<meta name="description"
+      content="Code Noor is an independent studio crafting calm, private, and thoughtful apps for journaling, reflection, and everyday clarity.">
+
+<link rel="canonical" href="https://code-noor-portfolio.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Code Noor" />
+<meta property="og:description" content="Quiet, thoughtful apps. Private by design." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://code-noor-portfolio.github.io/" />
+<meta property="og:image" content="https://code-noor-portfolio.github.io/assets/og-image.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon -->
+<link rel="icon" href="../assets/logo_studio.png" />
+
+<meta name="theme-color" content="#F5F1EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="Code Noor home">
+            <img src="../assets/app_logo_watermark.png" alt="Code Noor" />
+          </a>
 
-<header>
-  <div class="container nav">
-    <div class="logo">
-      <img src="../assets/logo.png" alt="Code Noor logo">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="within.html">Applications</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
+          <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="active">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="about.html">A propos</a>
+          </nav>
+
+         <div class="header-cta header-cta-stack">
+  <div class="lang-switch" aria-label="Language switch">
+    <button class="lang-btn" type="button" data-lang="fr">FR</button>
+    <button class="lang-btn" type="button" data-lang="en">EN</button>
   </div>
-</header>
+  <a class="btn" href="contact.html">Contact</a>
+</div>         
+          <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+       <div class="mobile-menu" data-mobile-menu>
 
-<div class="container">
-
-<section class="hero">
-<h1>Un petit studio, construit doucement.</h1>
-<p class="sub">Nous créons des applications simples et apaisantes pour le quotidien.</p>
-</section>
-
-<div class="feature-card">
-  <div class="info">
-    <h2>Within</h2>
-    <p>Un espace personnel pour écrire, respirer et observer vos pensées.</p>
+  <div class="lang-switch mobile-lang" aria-label="Language switch">
+    <button class="lang-btn" type="button" data-lang="fr">FR</button>
+    <button class="lang-btn" type="button" data-lang="en">EN</button>
   </div>
-  <a href="within.html" class="btn">Découvrir</a>
+
+  <a href="index.html">Home</a>
+  <a href="applications.html">Applications</a>
+  <a href="about.html" class="active">A Propos</a>
+  <a class="btn mobile-cta" href="contact.html">Contact</a>
 </div>
+      </div>
+    </header>
 
-<section class="about-block">
-<h2>Le studio</h2>
-<p>Code Noor conçoit des espaces numériques calmes et humains. Sans bruit. Sans pression.</p>
-<a href="about.html">En savoir plus →</a>
-</section>
+  <main>
+      <!-- Hero -->
+      <section class="section">
+        <div class="container">
+          <div class="hero">
+            <div>
+              <h1>Un petit studio qui crée des applications calmes et réfléchies.</h1>
+              <p>
+Nous façonnons des espaces numériques dédiés à la réflexion, à l’écriture et à plus de clarté au quotidien.
+              </p>
+              <div class="quote">« Pensées pour protéger votre vie privée. Conçues pour durer. »</div>
+            </div>
 
-<section class="apps">
-  <div class="app-card muted-botanical">
-    <div>
-      <h3>Within</h3>
-      <p>Journal & émotions</p>
-    </div>
-    <a href="within.html">Voir la page →</a>
-  </div>
+            <aside class="feature-card" aria-label="Currently in bloom">
+              <div class="label">En ce moment</div>
 
-  <div class="app-card">
-    <div>
-      <h3>Bientôt</h3>
-      <p>De nouveaux projets arrivent.<br>Suivez-nous pour les nouveautés.</p>
-    </div>
-  </div>
-</section>
+              <div class="app-row">
+                <div class="app-left">
+                   <img src="../assets/within_icon.png"
+     alt="Within icon"
+     class="app-logo">
+                
+                  <div class="app-meta">
+                    <p class="name">Within</p>
+                    <p class="tagline">Un endroit paisible pour vos pensées..</p>
+                  </div>
+                </div>
 
+                <a class="btn btn-small btn-ghost" href="applications.html#within">Découvrir</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- About the studio -->
+      <section class="section spacer-lg">
+        <div class="container">
+          <div class="about-block">
+            <div class="about-text">
+              <div class="h2">Qui sommes nous?</div>
+              <p>
+Un petit studio, construit en toute discrétion. Nous créons des applications sensibles et attentives, qui laissent de la place à votre vraie vie, chaque jour.              </p>
+
+              <div class="pills" aria-label="Studio highlights">
+                <span class="pill">Conçues avec soin</span>
+                <span class="pill">Respectueuses de votre vie privée</span>
+                <span class="pill">Pensées pour apaiser</span>
+                <span class="pill">Studio indépendant</span>
+              </div>
+
+              <p style="margin-top:10px;">
+Créées et développées par une seule personne, avec beaucoup d’attention.              </p>
+            </div>
+
+            <div class="about-actions">
+<a class="btn btn-small btn-outline" href="about.html">En savoir plus</a>            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Applications -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <div class="h2">Nos Applications</div>
+              <div class="sub">Une collection grandissante d’outils simples et silencieux.</div>
+            </div>
+          </div>
+
+          <div class="carousel" aria-label="Applications carousel">
+            <!-- Within card -->
+            <article class="carousel-card">
+              <h3>Within</h3>
+
+              <img src="../assets/within_icon.png"
+     alt="Within icon"
+     class="app-logo app-logo-lg">
+
+             <p class="split-lines">
+  <span>Capturer les petits moments</span>
+  <span>Les voir éclore avec le temps</span>
+  <span>Avancer à votre propre rythme</span>
+</p>
+
+              <div class="store-row">
+                <!-- Replace # with real store links later -->
+                <a class="store-btn" href="#" aria-label="Within on the App Store"> App Store</a>
+                <a class="store-btn" href="#" aria-label="Within on Google Play">▶ Google Play</a>
+              </div>
+
+              <div class="discover-row">
+<a class="btn btn-small btn-link" href="applications.html#within">
+  Découvrir →
+</a>              </div> 
+            </article>
+
+            <!-- More soon card -->
+            <article class="carousel-card more-soon">
+              <h3>D’autres arrivent bientôt</h3>
+              <p>
+Les belles choses prennent le temps de grandir. Les prochaines sorties sont partagées en premier sur nos réseaux.              </p>
+
+              <div class="social-row">
+  <a
+    class="store-btn social-btn"
+    href="https://www.tiktok.com/@code.noor"
+    target="_blank"
+    rel="noopener"
+    aria-label="Code Noor on TikTok"
+  >
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M16 5c1.1 1.3 2.6 2 4 2v3c-1.6 0-3.1-.5-4.4-1.4v5.9a5.5 5.5 0 1 1-5.5-5.5c.4 0 .7 0 1 .1v3a2.5 2.5 0 1 0 1.5 2.4V2h3.4c0 1 .3 2 .9 3z"/>
+    </svg>
+    TikTok
+  </a>
+
+  <a
+    class="store-btn social-btn"
+    href="https://www.instagram.com/code.noor"
+    target="_blank"
+    rel="noopener"
+    aria-label="Code Noor on Instagram"
+  >
+    <svg viewBox="0 0 24 24" class="icon">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm6-1.8a1.3 1.3 0 1 0 1.3 1.3A1.3 1.3 0 0 0 18 5.7z"/>
+    </svg>
+    Instagram
+  </a>
 </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer>
-  <div class="container">
-    <p>
-    Publisher — Code Noor (sole proprietorship)<br>
-    Email: code.noor@outlook.com<br>
-    Director of publication: Code Noor
-    </p>
+
+
+        <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="../assets/logo_studio.png" alt="Code Noor" />
+            <div>
+              <small><strong>Publisher</strong><br/>Code Noor<br/>Sole proprietorship (micro-enterprise)<br/>code.noor@outlook.com</small>
+              <br/>
+              <small style="display:inline-block;margin-top:10px;"><strong>Director of publication</strong><br/>Code Noor</small>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Nos Applications</a>
+            <a href="about.html">A propos</a>
+            <a href="contact.html">Contactez nous</a>
+          </div>
+          <div><small>Les mentions légales s’appliquent à l’ensemble du studio.
+Chaque application dispose de ses propres Conditions d’utilisation et de sa Politique de confidentialité.</small></div>
+        </div>
+        <div class="footer-bottom">© <span id="year"></span>, Code Noor copyright</div>
+      </div>
+    </footer>
   </div>
-</footer>
 
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <title>Code Noor</title>
 
-  <script>
-  const lang = navigator.language || navigator.userLanguage;
+ <script>
+  const saved = localStorage.getItem('codeNoorLang'); // 'fr' | 'en' | null
+  const lang = saved || (navigator.language || navigator.userLanguage || 'en');
 
-   window.location.replace('en/index.html');
-
-//   if (lang.startsWith('fr')) {
-//     window.location.replace('fr/index.html'); // ← sans slash
-//   } else {
-//     window.location.replace('en/index.html');
-//   }
+  if (lang.toLowerCase().startsWith('fr')) {
+    window.location.replace('fr/index.html');
+  } else {
+    window.location.replace('en/index.html');
+  }
 </script>
 </head>
 <body></body>
