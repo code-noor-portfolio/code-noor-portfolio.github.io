@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About, Code Noor</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+<title>About — Code Noor</title>
+<link rel="canonical" href="https://code-noor-portfolio.github.io/about.html" />
+<meta name="description"
+      content="Code Noor is an independent studio designing quiet, human-first apps built with care and privacy by default.">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html"><img src="../assets/app_logo_watermark.png" alt="Code Noor" /></a>
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="about.html" class="active">About us</a>
+          </nav>
+          <div class="header-cta"><a class="btn" href="contact.html">Contact</a></div>
+          <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+        </div>
+        <div class="mobile-menu" data-mobile-menu>
+          <a href="index.html">Home</a>
+          <a href="applications.html">Applications</a>
+          <a href="about.html" class="active">About us</a>
+          <a class="btn mobile-cta" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+   <main>
+
+  <!-- Hero -->
+<!-- Intro -->
+<section class="section">
+  <div class="container">
+    <div class="about-title">
+      <h1 class="wordmark" aria-label="Code Noor">
+        <span class="wordmark-code">CODE</span>
+        <span class="wordmark-noor">NOOR</span>
+      </h1>
+
+      <p class="about-lead">
+        A small studio, made by one person, with a lot of care.
+      </p>
+    </div>
+
+    <article class="feature-card about-intro">
+      <div class="h2">What we build</div>
+      <p class="about-muted">
+        Quiet apps with a calm visual language, built to feel personal, not clinical.
+      </p>
+
+      <div class="pills" aria-label="Studio highlights">
+        <span class="pill">No ads</span>
+        <span class="pill">No tracking</span>
+        <span class="pill">No noise</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <div class="h2">A few words</div>
+          <div class="sub">The principles behind the studio.</div>
+        </div>
+      </div>
+
+<div class="mini-cards about-grid">
+          <div class="mini-card">
+          <h4>Human first</h4>
+          <p>Every screen leaves room for real life, mess included.</p>
+        </div>
+
+        <div class="mini-card">
+          <h4>Craft over hype</h4>
+          <p>Small features, refined slowly. Built to last.</p>
+        </div>
+
+        <div class="mini-card">
+          <h4>Privacy by default</h4>
+          <p>Your data stay on your device. Always.</p>
+        </div>
+
+        <div class="mini-card">
+          <h4>Built over seasons</h4>
+          <p>Apps that evolve gently and feel alive with time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Founder -->
+  <section class="section">
+    <div class="container">
+      <article class="feature-card" style="max-width:760px;margin:auto;">
+        <div class="h2">Who’s behind it</div>
+
+        <p style="color:var(--muted);margin-top:10px;">
+          Hi, I’m Chaima. I design and build Code Noor’s apps, from UX to code,
+          and the illustrations in between.
+        </p>
+
+        <p style="color:var(--muted);">
+          I care about digital spaces that feel warm and grounded. The goal isn’t
+          to “fix” you, it’s to give you a place to write, notice what’s here,
+          and move at your own pace.
+        </p>
+
+        <p style="color:var(--muted);">
+          If you’d like to collaborate or share feedback, I’d love to hear from you.
+        </p>
+
+        <div style="margin-top:14px;">
+          <a class="btn btn-outline btn-small" href="contact.html">Contact me</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="../assets/logo_studio.png" alt="Code Noor" />
+            <div>
+              <small><strong>Publisher</strong><br/>Code Noor<br/>Sole proprietorship (micro-enterprise)<br/>code.noor@outlook.com</small>
+              <br/>
+              <small style="display:inline-block;margin-top:10px;"><strong>Director of publication</strong><br/>Code Noor</small>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Our Applications</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div><small>Legal notice is studio-wide. Each app page includes its own Terms & Privacy.</small></div>
+        </div>
+        <div class="footer-bottom">© <span id="year"></span>, Code Noor copyright</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
