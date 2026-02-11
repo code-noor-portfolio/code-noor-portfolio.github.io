@@ -349,7 +349,7 @@ main {
   height: 64px;
   object-fit: contain;
   /* ne coupe jamais l'image */
-  border-radius: 18px;
+  border-radius: 12px;
   /* style iOS */
   background: #fff;
   /* si png transparent */
@@ -1251,26 +1251,27 @@ main {
 }
 
 /* Keep 2 columns on Within hero even on mobile */
-@media (max-width: 940px){
-  .hero.hero-keep-2col{
+@media (max-width: 940px) {
+  .hero.hero-keep-2col {
     grid-template-columns: 1.2fr 0.8fr;
     gap: 14px;
     align-items: center;
   }
 
-  .hero.hero-keep-2col h1{
-    font-size: 28px; /* évite que ça déborde */
+  .hero.hero-keep-2col h1 {
+    font-size: 28px;
+    /* évite que ça déborde */
   }
 
-  .hero.hero-keep-2col p{
+  .hero.hero-keep-2col p {
     font-size: 14px;
   }
 
-  .hero.hero-keep-2col .hero-aside{
+  .hero.hero-keep-2col .hero-aside {
     min-height: auto;
   }
 
-  .hero.hero-keep-2col .app-logo-lg{
+  .hero.hero-keep-2col .app-logo-lg {
     width: 64px;
     height: 64px;
   }
